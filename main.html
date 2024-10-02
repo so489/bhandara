@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header{
+        width: 100%;
+        height: 100vh;
+        background:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(2.jpg);
+        background-size: cover;
+        font-family: sans-serif;
+    }   
+    nav{
+        width: 100%;
+        height: 100px;
+        color: orange;
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+    .menu a{
+        text-decoration: none;
+        color:white;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+    }
+    .menu a:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom: 2px solid rgb(242, 19, 19);
+        transition: 0.4s linear;
+    }
+    .menu a:hover:before{
+        width: 90%;
+    }
+
+    .Register a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        font-size: 20px;
+        background: indianred;
+        border-radius: 8px;
+        transition: 0.4s;
+    }
+    .Register a:hover{
+      background: transparent;
+      border: 1px solid indianred;
+    }
+    .h-txt{
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: white;
+    }
+    .h-txt span{
+        letter-spacing: 5px;
+    }
+    .h-txt h1{
+        
+        font-size: 3.5em;
+    }
+    .h-txt a{
+        text-decoration: none;
+        background: indianred;
+        color: white;
+        padding: 10px 20px;
+        letter-spacing: 5px;
+    }
+    .h-txt a:hover{
+        background: transparent;
+      border: 1px solid indianred;
+    }
+    .btn-close{
+        background-color: transparent;
+    
+    }
+  
+    </style>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                भंडारा 
+            </div>
+            <div class="menu">
+                <a href="main.html">Home</a>
+                <a href="/home/Pricing-table-master/index.html">Purchase</a>
+                <a href="/home/Addllocation/index.html">Add Location</a>
+                <a href="/home/Service/index.html">Service</a>
+                <a href="/home/About/indexa.html">About</a>
+                <a href="#">Account</a>
+            </div>
+            
+            <div class="Register">
+                <a href="/Register/register.html">Register</a>
+            </div>
+        </nav>
+        <section class="h-txt">
+           <span>News</span>
+            <h1>Drop Location For Bhandara</h1>
+            <br>
+            <a href="/home/Addllocation/index.html">Click Now</a>
+        </section>
+    </header>
+</body>
+</html>
